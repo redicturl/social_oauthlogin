@@ -26,6 +26,6 @@ var afterLoginFunction = function(data){
 };
 
 var profileReceivedFn = function(profile){
-    document.getElementById('OutputConsole').innerHTML = JSON.stringify(profile, null, 4);
+    document.getElementById('OutputConsole').innerHTML = '<pre>' + JSON.stringify(JSON.parse(profile), null, 2) + '</pre>';
     console.log(profile);
 };
